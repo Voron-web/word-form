@@ -1,0 +1,610 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inheri;
+}
+
+body {
+  background-color: rgba(219, 219, 219, 0.973);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 9pt;
+}
+
+textarea,
+input {
+  text-decoration: none;
+  font-style: italic;
+  background-image: url("../../img/line.png");
+}
+
+label {
+  font-style: italic;
+  cursor: pointer;
+}
+
+input:checked + label {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.list {
+  background-color: #fff;
+  width: 210mm;
+  height: 295mm;
+  border: 1px solid #686868;
+  margin: 20px auto;
+  padding: 9mm 10mm;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 9pt;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 9pt;
+  display: inline;
+}
+
+.complain {
+  position: relative;
+}
+
+.complain__title {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: #fff;
+}
+
+.complain__text {
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.1;
+}
+
+.anamnez {
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.anamnez__title {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.anamnez__main_title {
+  display: inline;
+}
+
+.anamnez__text {
+  resize: none;
+  width: 100%;
+  line-height: 1.06;
+}
+
+.objective__title {
+  display: inline;
+}
+
+.objective form {
+  display: inline;
+  font-style: italic;
+}
+
+.objective__conscious_span {
+  font-style: italic;
+}
+
+.objective__glazgo {
+  width: 7mm;
+}
+
+.objective__situation {
+  width: 56mm;
+}
+
+.objective__skin {
+  width: 34mm;
+}
+
+.objective__rash {
+  width: 45mm;
+}
+
+.objective__zev {
+  width: 45mm;
+}
+
+.objective__mindal {
+  width: 61mm;
+}
+
+.objective__limfo {
+  width: 35mm;
+}
+
+.objective__bedsores {
+  width: 30mm;
+}
+
+.objective__edema {
+  width: 56mm;
+}
+
+.objective__temp {
+  width: 12mm;
+}
+
+.breath {
+  margin: 5px 0 0 0;
+}
+
+.breath__italic {
+  font-style: italic;
+}
+
+.breath form {
+  display: inline;
+  font-style: italic;
+}
+
+.breath__chdd {
+  width: 12mm;
+}
+
+.breath__dyspnea {
+  font-size: 8.5pt;
+}
+
+.breath__patolog {
+  width: 11mm;
+}
+
+.breath__auskultiv-text {
+  width: 34mm;
+}
+
+.breath__dry {
+  width: 124mm;
+}
+
+.breath__wet {
+  width: 109mm;
+}
+
+.breath__krepit {
+  width: 125mm;
+}
+
+.breath__sound-text {
+  width: 52mm;
+}
+
+.breath__cough {
+  width: 120mm;
+}
+
+.blood {
+  margin: 5px 0 0 0;
+}
+
+.blood form {
+  display: inline;
+  font-style: italic;
+}
+
+.blood__pulse {
+  width: 15mm;
+}
+
+.blood__filling {
+  width: 49mm;
+}
+
+.blood__chss {
+  width: 18mm;
+}
+
+.blood__low-pulse {
+  width: 18mm;
+}
+
+.blood__ad {
+  width: 18mm;
+}
+
+.blood__normal {
+  width: 18mm;
+}
+
+.blood__max {
+  width: 18mm;
+}
+
+.blood__noise {
+  width: 53mm;
+}
+
+.blood__go {
+  width: 40mm;
+}
+
+.blood__accent {
+  width: 20mm;
+}
+
+.blood__tone {
+  width: 43mm;
+}
+
+.digestion {
+  margin: 5px 0 0 0;
+}
+
+.digestion form {
+  display: inline;
+  font-style: italic;
+}
+
+.digestion__tongue {
+  width: 102mm;
+}
+
+.digestion__stomach {
+  width: 25mm;
+}
+
+.digestion__stomach-in {
+  width: 110mm;
+}
+
+.digestion__painful {
+  width: 84mm;
+}
+
+.digestion__synptom {
+  width: 57mm;
+}
+
+.digestion__perilstat {
+  width: 45mm;
+}
+
+.digestion__liver {
+  width: 45mm;
+}
+
+.digestion__spleen {
+  width: 44mm;
+}
+
+.digestion__small-text {
+  font-size: 8.5pt;
+}
+
+.digestion__vomit {
+  width: 61mm;
+}
+
+.digestion__feces {
+  width: 61mm;
+}
+
+.nerves {
+  margin: 5px 0 0 0;
+}
+
+.nerves form {
+  display: inline;
+  font-style: italic;
+}
+
+.nerves__contact {
+  width: 70mm;
+}
+
+.nerves__sensitivity {
+  width: 60mm;
+}
+
+.nerves__speech {
+  width: 40mm;
+}
+
+.nerves__photo {
+  width: 28mm;
+}
+
+.nerves__nistagm {
+  width: 55mm;
+}
+
+.nerves__face {
+  width: 65mm;
+}
+
+.nerves__symptom {
+  width: 55mm;
+}
+
+.nerves__symptom_och1 {
+  width: 63mm;
+}
+
+.nerves__symptom_och2 {
+  width: 80mm;
+}
+
+.nerves__samples {
+  width: 71mm;
+}
+
+.nerves__form-on {
+  display: none;
+}
+
+.nerves .od + label {
+  font-weight: normal;
+}
+
+.nerves .od:checked + label > .nerves__form-off {
+  display: none;
+}
+
+.nerves .od:checked + label > .nerves__form-on {
+  display: inline;
+}
+
+.urinary {
+  margin: 5px 0 0 0;
+}
+
+.urinary form {
+  display: inline;
+  font-style: italic;
+}
+
+.urinary__text1 {
+  width: 155mm;
+}
+
+.urinary__text2 {
+  width: 75mm;
+}
+
+.urinary__symptom {
+  width: 74mm;
+}
+
+.status {
+  position: relative;
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.status__title {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: #fff;
+}
+
+.status__text {
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.08;
+}
+
+.research {
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.research__title {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: #fff;
+}
+
+.research__title span {
+  font-size: 8.5pt;
+}
+
+.research__text {
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.08;
+}
+
+.help {
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.help__title {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: #fff;
+}
+
+.help__title span {
+  font-size: 8.5pt;
+}
+
+.help__text {
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.06;
+}
+
+.materials {
+  position: relative;
+}
+
+.materials__title {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: #fff;
+}
+
+.materials__text {
+  resize: none;
+  width: 100%;
+  text-indent: 150px;
+  overflow: hidden;
+  line-height: 1.08;
+}
+
+.footer {
+  margin: 5px 0 0 0;
+}
+
+.footer form {
+  display: inline;
+  font-style: italic;
+}
+
+.footer__date {
+  width: 50mm;
+}
+
+.footer__signature {
+  width: 20mm;
+}
+
+.footer__check {
+  width: 39mm;
+}
+
+@media (max-width: 425px) {
+  body {
+    letter-spacing: 0.2px;
+  }
+  body input {
+    line-height: 1.2;
+  }
+  .list {
+    padding-right: 8mm;
+  }
+  input {
+    line-height: 1.2;
+  }
+  .complain__text {
+    line-height: 1.2;
+  }
+  .anamnez__text {
+    line-height: 1.17;
+  }
+  .anamnez__text:not(*:root) {
+    line-height: 1.05;
+  }
+  .status__text {
+    line-height: 1.17;
+  }
+  .status__text:not(*:root) {
+    line-height: 1.05;
+  }
+  .research__text {
+    line-height: 1.17;
+  }
+  .research__text:not(*:root) {
+    line-height: 1.05;
+  }
+  .help__text {
+    line-height: 1.17;
+  }
+  .help__text:not(*:root) {
+    line-height: 1.05;
+  }
+}

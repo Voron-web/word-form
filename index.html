@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Word form</title>
+	<!--Заголовок-->
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="list">
+		<form action="">
+			<div class="complain">
+				<h2 class="complain__title">жалобы:</h2>
+				<textarea tabindex="1" class="complain__text" name="complain" rows="2" cols="90">_________</textarea>
+			</div>
+			<div class="anamnez">
+				<div tabindex="2" class="anamnez__title">
+					<h2 class="anamnez__main_title">анамнез:</h2>
+					<span class="anamnez__clarification">(в т.ч. – эпид., аллерг., гинекол. по показаниям)</span>
+				</div>
+				<textarea class="anamnez__text" name="complain" rows="7"
+					cols="90">________________________________________________</textarea>
+			</div>
+			<div class="objective">
+				<h2 class="objective__title">объективно:</h2>
+				<span class="objective__clarification">общее состояние:</span>
+				<input tabindex="3" id="cond1" type="checkbox" name="condition" style="display: none;">
+				<label for="cond1">удовл.</label>
+				<span>,</span>
+				<input tabindex="4" id="cond2" type="checkbox" name="condition" style="display: none;">
+				<label for="cond2">ср. тяжести</label>
+				<span>,</span>
+				<input id="cond3" type="checkbox" name="condition" style="display: none;">
+				<label for="cond3">тяжелое</label>
+				<span>,</span>
+				<input id="cond4" type="checkbox" name="condition" style="display: none;">
+				<label for="cond4">терминальное</label>
+				<span>.</span>
+				<span>Сознание:</span>
+				<input id="cons1" type="checkbox" name="conscious" style="display: none;">
+				<label for="cons1">ясное</label>
+				<span>,</span>
+				<input id="cons2" type="checkbox" name="conscious" style="display: none;">
+				<label for="cons2">оглушение</label>
+				<span>,</span>
+				<input id="cons3" type="checkbox" name="conscious" style="display: none;">
+				<label for="cons3">сопор</label>
+				<span>,</span>
+				<br>
+				<input id="cons4" type="checkbox" name="conscious" style="display: none;">
+				<label for="cons4">кома</label>
+				<span class="objective__conscious_span">– глубина по шк. Глазго</span>
+				<input class="objective__glazgo" type="text">
+				<span>. Положение: </span>
+				<input id="sit1" type="checkbox" name="situation" style="display: none;">
+				<label for="sit1">активное</label>
+				<span>,</span>
+				<input id="sit2" type="checkbox" name="situation" style="display: none;">
+				<label for="sit2">пассивное</label>
+				<span>,</span>
+				<input id="sit3" type="checkbox" name="situation" style="display: none;">
+				<label for="sit3">вынужденное</label>
+				<span>:</span>
+				<input class="objective__situation" type="text">
+				<br>
+				<span>Кожные покровы:</span>
+				<input id="skin1" type="checkbox" name="skin_wet" style="display: none;">
+				<label for="skin1">сухие</label>
+				<span>,</span>
+				<input id="skin2" type="checkbox" name="skin_wet" style="display: none;">
+				<label for="skin2">влажные</label>
+				<span>,</span>
+				<input id="skin3" type="checkbox" name="skin" style="display: none;">
+				<label for="skin3">обычной окраски</label>
+				<span>,</span>
+				<input id="skin4" type="checkbox" name="skin" style="display: none;">
+				<label for="skin4">бледные</label>
+				<span>,</span>
+				<input id="skin5" type="checkbox" name="skin" style="display: none;">
+				<label for="skin5">гиперемия</label>
+				<span>,</span>
+				<input id="skin6" type="checkbox" name="skin" style="display: none;">
+				<label for="skin6">цианоз</label>
+				<span>,</span>
+				<input id="skin7" type="checkbox" name="skin" style="display: none;">
+				<label for="skin7">желтушность</label>
+				<input class="objective__skin" type="text">
+				<br>
+				<span>Сыпь:</span>
+				<input class="objective__rash" type="text">
+				<span>Зев:</span>
+				<input class="objective__zev" type="text">
+				<span>Миндалины:</span>
+				<input class="objective__mindal" type="text">
+				<br>
+				<span>Лимфоузлы:</span>
+				<input class="objective__limfo" type="text">
+				<span>Пролежни:</span>
+				<input class="objective__bedsores" type="text">
+				<span>Отеки:</span>
+				<input class="objective__edema" type="text">
+				<span>t°C:</span>
+				<input class="objective__temp" type="text">
+			</div>
+			<br>
+			<div class="breath">
+				<h3>Органы дыхания: </h3>
+				<span>ЧДД</span>
+				<input class="breath__chdd" type="text">
+				<span>в мин., одышка </span>
+				<input id="dysp1" type="checkbox" name="dyspnea" style="display: none;">
+				<label class="breath__dyspnea" for="dysp1">экспираторная</label>
+				<span>,</span>
+				<input id="dysp2" type="checkbox" name="dyspnea" style="display: none;">
+				<label class="breath__dyspnea" for="dysp2">инспираторная</label>
+				<span>,</span>
+				<input id="dysp3" type="checkbox" name="dyspnea" style="display: none;">
+				<label class="breath__dyspnea" for="dysp3">смешанная</label>
+				<span> Патологическое дыхание</span>
+				<input class="breath__patolog" type="text">
+				<span>Аускультативно:</span>
+				<input id="auskultiv1" type="checkbox" name="auskultiv" style="display: none;">
+				<label for="auskultiv1">везикулярное</label>
+				<span>,</span>
+				<input id="auskultiv2" type="checkbox" name="auskultiv" style="display: none;">
+				<label for="auskultiv2">жесткое</label>
+				<span>,</span>
+				<input id="auskultiv3" type="checkbox" name="auskultiv" style="display: none;">
+				<label for="auskultiv3">бронхиальное</label>
+				<span>,</span>
+				<input id="auskultiv4" type="checkbox" name="auskultiv" style="display: none;">
+				<label for="auskultiv4">пуэрильное</label>
+				<span>,</span>
+				<input id="auskultiv5" type="checkbox" name="auskultiv" style="display: none;">
+				<label for="auskultiv5">ослаблено</label>
+				<span>,</span>
+				<input id="auskultiv6" type="checkbox" name="auskultiv" style="display: none;">
+				<label for="auskultiv6">отсутствует </label>
+				<span>в</span>
+				<input class="breath__auskultiv-text" type="text">
+				<span>Хрипы</span> <span class="breath__italic">сухие (</span>
+				<input id="dry1" type="checkbox" name="dry" style="display: none;">
+				<label for="dry1">свистящие</label>
+				<span>,</span>
+				<input id="dry2" type="checkbox" name="dry" style="display: none;">
+				<label for="dry2">жужжащие</label>
+				<span class="breath__italic">) в</span>
+				<input class="breath__dry" type="text">
+				<span class="breath__italic">Влажные (</span>
+				<input id="wet1" type="checkbox" name="wet" style="display: none;">
+				<label for="wet1">мелко-</label>
+				<span>,</span>
+				<input id="wet2" type="checkbox" name="wet" style="display: none;">
+				<label for="wet2">средне-</label>
+				<span>,</span>
+				<input id="wet3" type="checkbox" name="wet" style="display: none;">
+				<label for="wet3">крупнопузырчатые</label>
+				<span class="breath__italic">) в</span>
+				<input class="breath__wet" type="text">
+				<input id="krepit1" type="checkbox" name="krepit" style="display: none;">
+				<label for="krepit1">Крепитация</label>
+				<span>,</span>
+				<input id="krepit2" type="checkbox" name="krepit" style="display: none;">
+				<label for="krepit2">шум </label>
+				<span>,</span>
+				<input id="krepit3" type="checkbox" name="krepit" style="display: none;">
+				<label for="krepit3">трения </label>
+				<span>,</span>
+				<input id="krepit4" type="checkbox" name="krepit" style="display: none;">
+				<label for="krepit4">плевры </label>
+				<span class="breath__italic">над</span>
+				<input class="breath__krepit" type="text">
+				<span>Перкуторный звук:</span>
+				<input id="sound1" type="checkbox" name="sound" style="display: none;">
+				<label for="sound1">легочный</label>
+				<span>,</span>
+				<input id="sound2" type="checkbox" name="sound" style="display: none;">
+				<label for="sound2">тимпанический</label>
+				<span>,</span>
+				<input id="sound3" type="checkbox" name="sound" style="display: none;">
+				<label for="sound3">коробочный</label>
+				<span>,</span>
+				<input id="sound4" type="checkbox" name="sound" style="display: none;">
+				<label for="sound4">притупленный</label>
+				<span>,</span>
+				<input id="sound5" type="checkbox" name="sound" style="display: none;">
+				<label for="sound5">тупой</label>
+				<span class="breath__italic">над</span>
+				<input class="breath__sound-text" type="text">
+				<span>Кашель</span>
+				<input id="cough1" type="checkbox" name="cough" style="display: none;">
+				<label for="cough1">сухой</label>
+				<span>,</span>
+				<input id="cough2" type="checkbox" name="cough" style="display: none;">
+				<label for="cough2">влажный</label>
+				<span>,</span>
+				<input id="cough3" type="checkbox" name="cough" style="display: none;">
+				<label for="cough3">лающий</label>
+				<span>. Мокрота</span>
+				<input class="breath__cough" type="text">
+			</div>
+			<div class="blood">
+				<h3>Органы кровообращения:</h3>
+				<span>пульс</span>
+				<input class="blood__pulse" type="text">
+				<span>в мин.</span>
+				<input id="pulse1" type="checkbox" name="pulse" style="display: none;">
+				<label for="pulse1">ритмичный</label>
+				<span>,</span>
+				<input id="pulse2" type="checkbox" name="pulse" style="display: none;">
+				<label for="pulse2">аритмичный</label>
+				<span>, наполнение</span>
+				<input class="blood__filling" type="text">
+				<span>ЧСС</span>
+				<input class="blood__chss" type="text">
+				<span>, дефицит пульса</span>
+				<input class="blood__low-pulse" type="text">
+				<span>, АД</span>
+				<input class="blood__ad" type="text">
+				<span>привычное</span>
+				<input class="blood__normal" type="text">
+				<span>максимальное</span>
+				<input class="blood__max" type="text">
+				<span>мм рт.ст.</span>
+				<span>Тоны сердца</span>
+				<input id="heart1" type="checkbox" name="heart" style="display: none;">
+				<label for="heart1">звучные</label>
+				<span>,</span>
+				<input id="heart2" type="checkbox" name="heart" style="display: none;">
+				<label for="heart2">приглушены</label>
+				<span>,</span>
+				<input id="heart3" type="checkbox" name="heart" style="display: none;">
+				<label for="heart3">глухие</label>
+				<span>. Шум</span>
+				<input id="noise1" type="checkbox" name="noise" style="display: none;">
+				<label for="noise1">систолический</label>
+				<span>,</span>
+				<input id="noise2" type="checkbox" name="noise" style="display: none;">
+				<label for="noise2">диастолический </label>
+				<span>на</span>
+				<input class="blood__noise" type="text">
+				<span>проводится</span>
+				<input class="blood__go" type="text">
+				<span>.</span>
+				<input id="noise_p1" type="checkbox" name="noise_p" style="display: none;">
+				<label for="noise_p1">Шум трения перикарда</label>
+				<span>. Акцент</span>
+				<input class="blood__accent" type="text">
+				<span>тона на</span>
+				<input class="blood__tone" type="text">
+			</div>
+			<div class="digestion">
+				<h3>Органы пищеварения. </h3>
+				<span>Язык</span>
+				<input id="tongue1" type="checkbox" name="tongue" style="display: none;">
+				<label for="tongue1">сухой</label>
+				<span>,</span>
+				<input id="tongue2" type="checkbox" name="tongue" style="display: none;">
+				<label for="tongue2">влажный </label>
+				<span>,</span>
+				<input id="tongue3" type="checkbox" name="tongue" style="display: none;">
+				<label for="tongue3">обложен </label>
+				<input class="digestion__tongue" type="text">
+				<span>Живот форма</span>
+				<input class="digestion__stomach" type="text">
+				<input id="stomach1" type="checkbox" name="stomach" style="display: none;">
+				<label for="stomach1">мягкий</label>
+				<span>,</span>
+				<input id="stomach2" type="checkbox" name="stomach" style="display: none;">
+				<label for="stomach2">напряжен </label>
+				<span class="italic">в</span>
+				<input class="digestion__stomach-in" type="text">
+				<span>болезненный в</span>
+				<input class="digestion__painful" type="text">
+				<span>Положительные симптомы (</span>
+				<input id="synptom1" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom1">Образцова</label>
+				<span>,</span>
+				<input id="synptom2" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom2">Ровзинга </label>
+				<span>,</span>
+				<input id="synptom3" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom3">Ситковского </label>
+				<span>,</span>
+				<input id="synptom4" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom4">Ортнера </label>
+				<span>,</span>
+				<input id="synptom5" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom5">Мерфи </label>
+				<span>,</span>
+				<input id="synptom6" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom6">Мейо-Робсона </label>
+				<span>,</span>
+				<input id="synptom7" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom7">Щеткина-Блюмберга </label>
+				<span>,</span>
+				<input id="synptom8" type="checkbox" name="synptom" style="display: none;">
+				<label for="synptom8">Вааля </label>
+				<span>)</span>
+				<input class="digestion__synptom" type="text">
+				<span>Перистальтика</span>
+				<input class="digestion__perilstat" type="text">
+				<span>Печень</span>
+				<input class="digestion__liver" type="text">
+				<span>Селезенка</span>
+				<input class="digestion__spleen" type="text">
+				<span>Рвота</span> <span class="digestion__small-text">(частота)</span>
+				<input class="digestion__vomit" type="text">
+				<span>Стул </span><span class="digestion__small-text">(консистенция, частота)</span>
+				<input class="digestion__feces" type="text">
+			</div>
+			<div class="nerves">
+				<h3>Нервная система.</h3>
+				<span>Поведение</span>
+				<input id="nerves1" type="checkbox" name="nerves" style="display: none;">
+				<label for="nerves1">спокойное</label>
+				<span>,</span>
+				<input id="nerves2" type="checkbox" name="nerves" style="display: none;">
+				<label for="nerves2">беспокойное </label>
+				<span>,</span>
+				<input id="nerves3" type="checkbox" name="nerves" style="display: none;">
+				<label for="nerves3">возбужден </label>
+				<span>. Контакт</span>
+				<input class="nerves__contact" type="text">
+				<span>Чувствительность</span>
+				<input class="nerves__sensitivity" type="text">
+				<span>Речь (</span>
+				<input id="speech1" type="checkbox" name="speech" style="display: none;">
+				<label for="speech1">внятная</label>
+				<span>,</span>
+				<input id="speech2" type="checkbox" name="speech" style="display: none;">
+				<label for="speech2">дизартрия </label>
+				<span>,</span>
+				<input id="speech3" type="checkbox" name="speech" style="display: none;">
+				<label for="speech3">афазия </label>
+				<span>)</span>
+				<input class="nerves__speech" type="text">
+				<span>Зрачки </span>
+				<input class="od" id="od" type="checkbox" name="odos" style="display: none;">
+				<label for="od">OD
+					<span class="nerves__form-off">=</span> <span class="nerves__form-on">&#8800</span> OS</label>
+				<span>,</span>
+				<input id="eye1" type="checkbox" name="eye" style="display: none;">
+				<label for="eye1">обычные</label>
+				<span>,</span>
+				<input id="eye2" type="checkbox" name="eye" style="display: none;">
+				<label for="eye2">широкие </label>
+				<span>,</span>
+				<input id="eye3" type="checkbox" name="eye" style="display: none;">
+				<label for="eye3">узкие </label>
+				<span>. Фотореакция</span>
+				<input class="nerves__photo" type="text">
+				<span>Нистагм</span>
+				<input class="nerves__nistagm" type="text">
+				<span>Ассиметрия лица</span>
+				<input class="nerves__face" type="text">
+				<span>Менингеальные симптомы (</span>
+				<input id="symptom1" type="checkbox" name="symptom" style="display: none;">
+				<label for="symptom1">ригидность затылочных мышц</label>
+				<span>,</span>
+				<input id="symptom2" type="checkbox" name="symptom" style="display: none;">
+				<label for="symptom2">Кернига </label>
+				<span>,</span>
+				<input id="symptom3" type="checkbox" name="symptom" style="display: none;">
+				<label for="symptom3">Брудзинского</label>
+				<input class="nerves__symptom" type="text">
+				<span>Очаговые симптомы</span>
+				<input class="nerves__symptom_och1" type="text" maxlength="26">
+				<input class="nerves__symptom_och2" type="text">
+				<span>Координаторные пробы</span>
+				<input class="nerves__samples" type="text">
+			</div>
+			<div class="urinary">
+				<span>Мочеполовая система</span>
+				<input class="urinary__text1" type="text">
+				<input class="urinary__text2" type="text">
+				<span>Симптом поколачивания</span>
+				<input class="urinary__symptom" type="text">
+			</div>
+			<div class="status">
+				<h3 class="status__title">Status localis </h3>
+				<textarea class="status__text" name="status" rows="4" cols="90">____________</textarea>
+			</div>
+			<div class="research">
+				<div class="research__title">
+					<h3>Данные инструментальных исследований</h3>
+					<span>(ЭКГ, глюкометрия, пульсоксиметрия и пр.)</span>
+				</div>
+				<textarea class="research__text" name="research" rows="5"
+					cols="90">_____________________________________________________________________</textarea>
+			</div>
+			<div class="help">
+				<div class="help__title">
+					<h3>Оказанная помощь и ее эффект</h3>
+					<span>(в т.ч. результаты инструментальных исследований в динамике):</span>
+				</div>
+				<textarea class="help__text" name="help" rows="13"
+					cols="90">_____________________________________________________________________________</textarea>
+			</div>
+			<div class="materials">
+				<h3 class="materials__title">Расходные материалы: </h3>
+				<textarea class="materials__text" name="materials" rows="2"></textarea>
+			</div>
+			<div class="footer">
+				<h3>Дата и номер наряда</h3>
+				<input class="footer__date" type="text">
+				<h3>Подпись:</h3>
+				<input class="footer__signature" type="text">
+				<h3>Карту проверил:</h3>
+				<input class="footer__check" type="text">
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
