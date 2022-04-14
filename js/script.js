@@ -1,3 +1,16 @@
+
+function space(x) {
+   let string = "";
+   for (i = 1; i <= x; i++) {
+      // let string="";
+      string += " "
+      //   console.log("&nbsp");
+   };
+   // console.log(string);
+   return string;
+}
+
+
 $(function () {
    $('.complain__text').on('keypress', function (event) {
       var text = $('.complain__text').val();
@@ -23,7 +36,8 @@ $('.complain__text').on('keyup', function (event) {
    var text = $('.complain__text').val();
    if (event.keyCode == 8 || event.keyCode == 46) {
       if (text.length < 9) {
-         $('.complain__text').val($.trim("_________"));
+         // $('.complain__text').val($.trim("&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp"));
+         $('.complain__text').val(space(9));
       }
    }
 })
@@ -52,8 +66,8 @@ $(function () {
 $('.anamnez__text').on('keyup', function (event) {
    var text = $('.anamnez__text').val();
    if (event.keyCode == 8 || event.keyCode == 46) {
-      if (text.length < 49) {
-         $('.anamnez__text').val($.trim("________________________________________________"));
+      if (text.length < 51) {
+         $('.anamnez__text').val(space(46));
       }
    }
 })
@@ -82,7 +96,7 @@ $('.status__text').on('keyup', function (event) {
    var text = $('.status__text').val();
    if (event.keyCode == 8 || event.keyCode == 46) {
       if (text.length < 12) {
-         $('.status__text').val($.trim("____________"));
+         $('.status__text').val(space(12));
       }
    }
 })
@@ -111,7 +125,7 @@ $('.research__text').on('keyup', function (event) {
    var text = $('.research__text').val();
    if (event.keyCode == 8 || event.keyCode == 46) {
       if (text.length < 69) {
-         $('.research__text').val($.trim("_____________________________________________________________________"));
+         $('.research__text').val(space(69));
       }
    }
 })
@@ -139,8 +153,8 @@ $(function () {
 $('.help__text').on('keyup', function (event) {
    var text = $('.help__text').val();
    if (event.keyCode == 8 || event.keyCode == 46) {
-      if (text.length < 77) {
-         $('.help__text').val($.trim("_____________________________________________________________________________"));
+      if (text.length < 82) {
+         $('.help__text').val(space(76));
       }
    }
 })
