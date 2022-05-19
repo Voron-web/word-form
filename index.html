@@ -4,7 +4,7 @@
 <head>
 	<title>Word form</title>
 	<!--Заголовок-->
-	<meta http-equiv="Content-type" content="text/html" ;charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8" />
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -16,23 +16,26 @@
 		<form action="">
 			<div class="complain">
 				<h2 class="complain__title">жалобы:</h2>
-				<textarea class="complain__text" name="complain" rows="2" cols="90">_________</textarea>
+				<textarea tabindex="1" class="complain__text" name="complain" rows="2"
+					cols="90">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </textarea>
+				<!-- 9 -->
 			</div>
 			<div class="anamnez">
-				<div class="anamnez__title">
+				<div tabindex="2" class="anamnez__title">
 					<h2 class="anamnez__main_title">анамнез:</h2>
 					<span class="anamnez__clarification">(в т.ч. – эпид., аллерг., гинекол. по показаниям)</span>
 				</div>
-				<textarea class="anamnez__text" name="complain" rows="7"
-					cols="90">________________________________________________</textarea>
+				<textarea class="anamnez__text" name="complain" rows="7" cols="90">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</textarea>
+				<!-- 48 -->
 			</div>
 			<div class="objective">
 				<h2 class="objective__title">объективно:</h2>
 				<span class="objective__clarification">общее состояние:</span>
-				<input id="cond1" type="checkbox" name="condition" style="display: none;">
+				<input tabindex="3" id="cond1" type="checkbox" name="condition" style="display: none;">
 				<label for="cond1">удовл.</label>
 				<span>,</span>
-				<input id="cond2" type="checkbox" name="condition" style="display: none;">
+				<input tabindex="4" id="cond2" type="checkbox" name="condition" style="display: none;">
 				<label for="cond2">ср. тяжести</label>
 				<span>,</span>
 				<input id="cond3" type="checkbox" name="condition" style="display: none;">
@@ -384,7 +387,8 @@
 			</div>
 			<div class="status">
 				<h3 class="status__title">Status localis </h3>
-				<textarea class="status__text" name="status" rows="4" cols="90">____________</textarea>
+				<textarea class="status__text" name="status" rows="4"
+					cols="90">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</textarea>
 			</div>
 			<div class="research">
 				<div class="research__title">
@@ -392,15 +396,16 @@
 					<span>(ЭКГ, глюкометрия, пульсоксиметрия и пр.)</span>
 				</div>
 				<textarea class="research__text" name="research" rows="5"
-					cols="90">_____________________________________________________________________</textarea>
+					cols="90">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</textarea>
 			</div>
 			<div class="help">
 				<div class="help__title">
 					<h3>Оказанная помощь и ее эффект</h3>
 					<span>(в т.ч. результаты инструментальных исследований в динамике):</span>
 				</div>
-				<textarea class="help__text" name="help" rows="13"
-					cols="90">_____________________________________________________________________________</textarea>
+				<textarea class="help__text" name="help" rows="13" cols="90">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				</textarea>
 			</div>
 			<div class="materials">
 				<h3 class="materials__title">Расходные материалы: </h3>
