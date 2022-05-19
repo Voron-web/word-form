@@ -88,7 +88,7 @@ textarea,
 input {
   text-decoration: none;
   font-style: italic;
-  background-image: url("../img/line.png");
+  background-image: url();
 }
 
 label {
